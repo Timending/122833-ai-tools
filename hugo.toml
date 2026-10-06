@@ -1,0 +1,80 @@
+baseURL = "https://122833.xyz/"
+languageCode = "en-us"
+title = "AI Agent Tools - Reviews, Tutorials & Guides"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+summaryLength = 70
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "In-depth reviews, tutorials and guides for AI agent tools, self-hosted AI, and one-person company workflows. Real experience, no fluff."
+  author = "AI Agent Tools"
+  keywords = ["AI agent", "AI tools", "self-hosted AI", "one person company", "Dify", "Ollama", "Claude Code", "Cursor"]
+
+  defaultTheme = "light"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = "AI Agent Tools 👋"
+    Content = "Real reviews and tutorials from someone who actually uses 10+ AI tools daily. No marketing fluff, just what works — TeleAgent, Claude Code, Cursor, Pi Agent, Dify, Ollama and more."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+
+  [params.editPost]
+    URL = ""
+    Text = "Suggest Changes"
+    appendFilePath = true
+
+[params.assets]
+  favicon = "/favicon.ico"
+  disableHLJS = false
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Reviews"
+  url = "/reviews/"
+  weight = 2
+
+[[menu.main]]
+  name = "Tutorials"
+  url = "/tutorials/"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
